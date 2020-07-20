@@ -1,0 +1,30 @@
+current directory: /home/travis/build/dieghernan/chulapa/vendor/bundle/ruby/2.4.0/gems/eventmachine-1.2.7/ext/fastfilereader
+/home/travis/.rvm/rubies/ruby-2.4.10/bin/ruby -I /home/travis/.rvm/rubies/ruby-2.4.10/lib/ruby/site_ruby/2.4.0 -r ./siteconf20200630-7080-10df0sp.rb extconf.rb
+creating Makefile
+
+current directory: /home/travis/build/dieghernan/chulapa/vendor/bundle/ruby/2.4.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR=" clean
+
+current directory: /home/travis/build/dieghernan/chulapa/vendor/bundle/ruby/2.4.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR="
+compiling mapper.cpp
+cc1plus: warning: command line option ‘-Wimplicit-int’ is valid for C/ObjC but not for C++
+cc1plus: warning: command line option ‘-Wdeclaration-after-statement’ is valid for C/ObjC but not for C++
+cc1plus: warning: command line option ‘-Wimplicit-function-declaration’ is valid for C/ObjC but not for C++
+cc1plus: warning: unrecognized command line option ‘-Wno-self-assign’
+cc1plus: warning: unrecognized command line option ‘-Wno-constant-logical-operand’
+cc1plus: warning: unrecognized command line option ‘-Wno-parentheses-equality’
+cc1plus: warning: unrecognized command line option ‘-Wno-tautological-compare’
+compiling rubymain.cpp
+cc1plus: warning: command line option ‘-Wimplicit-int’ is valid for C/ObjC but not for C++
+cc1plus: warning: command line option ‘-Wdeclaration-after-statement’ is valid for C/ObjC but not for C++
+cc1plus: warning: command line option ‘-Wimplicit-function-declaration’ is valid for C/ObjC but not for C++
+cc1plus: warning: unrecognized command line option ‘-Wno-self-assign’
+cc1plus: warning: unrecognized command line option ‘-Wno-constant-logical-operand’
+cc1plus: warning: unrecognized command line option ‘-Wno-parentheses-equality’
+cc1plus: warning: unrecognized command line option ‘-Wno-tautological-compare’
+linking shared-object fastfilereaderext.so
+
+current directory: /home/travis/build/dieghernan/chulapa/vendor/bundle/ruby/2.4.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR=" install
+/usr/bin/install -m 0755 fastfilereaderext.so ./.gem.20200630-7080-njniel

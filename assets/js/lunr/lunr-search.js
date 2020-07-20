@@ -1,3 +1,6 @@
+---
+layout: null
+---
 /*
 Copyright (c) 2013-2020 Michael Rose and contributors
 MIT License
@@ -89,7 +92,7 @@ $(document).ready(function() {
                     '<div class="row mt-2">' +
                     '<div class="col">' +
                     '<p>' + store[ref].excerpt.split(" ").splice(0, 10).join(" ") +
-								'<a href="' + store[ref].url + '"> [link]</a></p>' +
+								'</p>' +
 					'</div>' +
 					'</div>' +
 					'<hr>' +
@@ -107,7 +110,7 @@ $(document).ready(function() {
                     '<div class="row mt-2">' +
                     '<div class="col">' +
                     '<p>' + store[ref].excerpt.split(" ").splice(0, 10).join(" ") +
-								'<a href="' + store[ref].url + '"> [link]</a></p>' +
+								'</p>' +
 					'</div>' +
 					'</div>' +
 					'<hr>' +

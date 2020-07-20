@@ -1,6 +1,10 @@
+---
+layout: null
+---
+
 const algoliaClient = algoliasearch(
-  'KOIKA5PDQO',
-  '7f1fe42bef3f03458cb3a911ebc7e0ac'
+  '{{ site.algolia.application_id }}',
+  '{{ site.algolia.search_only_api_key }}'
 );
 
 const searchClient = {
@@ -20,7 +24,7 @@ const searchClient = {
 };
 
 const search = instantsearch({
-  indexName: 'chulapa',
+  indexName: '{{ site.algolia.index_name }}',
   searchClient,
 });
 
@@ -29,7 +33,9 @@ function imgurl(p1) {
   if (p1 === undefined){
     return " "
   } else if (p1.indexOf("./") === 0) {
-    return p1.replace("./", "/");
+    return p1.replace("./", "{{ '/' | absolute_url }}");
+  } else if (p1.indexOf("/") === 0) {
+    return p1.replace("/", "{{ '/' | absolute_url }}");
   } else {
     return p1
   }
@@ -50,19 +56,26 @@ function parsetitle(hit) {
   }
 }
 
+function parseimg(img1, img2){
+if (img1 === undefined){
+  return img2;
+  } else {
+    return img1;
+  }
+}
 
 const hitTemplate = function(hit) {
   const url = hit.url;
   const title = parsetitle(hit);
   const content = parsecontent(hit);
-  const img = hit.header_img;
+  const img = parseimg(hit.og_image, hit.header_img);
   const imglink = imgurl(img);
   if (img === undefined){
   return `
           <article class="my-2 text-left">
           <div class="row">
           <div class="col">
-          <h5 class="chulapa-links-hover-only"><a href="${url}">${title}</a></h5>
+          <h5 class="chulapa-links-hover-only"><a href="{{ '' | absolute_url }}${url}">${title}</a></h5>
           </div>
           </div>
           <div class="row mt-2">
@@ -78,10 +91,10 @@ const hitTemplate = function(hit) {
     <article class="my-2 text-left">
       <div class="row">
         <div class="col">
-          <h5 class="chulapa-links-hover-only"><a href="${url}">${title}</a></h5>
+          <h5 class="chulapa-links-hover-only"><a href="{{ '' | absolute_url }}${url}">${title}</a></h5>
         </div>
       <div class="col-4 col-md-3">
-      <a href="${url}">
+      <a href="{{ '' | absolute_url }}${url}">
         <div class="rounded-lg chulapa-overlay-img chulapa-min-h-10" style="background-image: url('${imglink}')" ></div>
         </a>
         </div>
@@ -102,7 +115,7 @@ const hitTemplate = function(hit) {
 search.addWidgets([
   instantsearch.widgets.searchBox({
     container: '#searchbox',
-    placeholder: 'Search...', 
+    placeholder: '{{ site.search.label | default: "Search" }}...', 
     showReset: false,
     showSubmit: false,
     showLoadingIndicator: false,
@@ -112,8 +125,12 @@ search.addWidgets([
       input: ['form-control', 'rounded'],
     },
   }),
-  
-  
+  {% if site.search.algolia_logo %}
+  instantsearch.widgets.poweredBy({
+    container: '#powered-by',
+  }),
+  {% endif %}
+  {% raw %}
   instantsearch.widgets.hits({
     container: '#hits',
     escapeHTML: false,
@@ -126,6 +143,6 @@ search.addWidgets([
       item: hitTemplate
     },
   }),
-  
+  {% endraw %}
 ]);
 search.start();

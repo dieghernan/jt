@@ -1,5 +1,9 @@
+---
+layout: null
+---
+
 (function() {
-    var cx = '';
+    var cx = '{{ site.google_cse_id }}';
     var gcse = document.createElement('script');
     gcse.type = 'text/javascript';
     gcse.async = true;
