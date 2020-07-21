@@ -6,7 +6,7 @@ permalink: ./atom.xml
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" >
 	<id>{{ page.url | absolute_url }}</id>
-	<title>{{ site.title | xml_escape }}{% if site.subtitle %}{{ " | " | append: site.subtitle | xml_escape }}</title>
+	<title>{{ site.title | xml_escape }}{% if site.subtitle %}{{ " | " | append: site.subtitle | xml_escape }}{% endif %}</title>
 	<updated>{{ site.time | date: "%a, %d %b %Y %H:%M:%S%z" }}</updated>
 	<link href="{{ page.url | absolute_url }}" rel="self" type="application/atom+xml" />
 	<link href="{{  ""  | absolute_url }}" rel="alternate" type="text/html" />
