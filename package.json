@@ -3,7 +3,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.13.1",
     "@fortawesome/free-regular-svg-icons": "^5.13.1",
     "@fortawesome/free-solid-svg-icons": "^5.13.1",
-    "olivernn/lunr.js": "^2.3.8"
+    "olivernn/lunr.js": "^2.3.8",
     "jekyll-toc": "git://github.com/allejo/jekyll-toc"
   }
 }
