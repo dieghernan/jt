@@ -53,10 +53,10 @@ permalink: ./rss.xml
 			{%- endfor -%}		
 		</author>
 		<summary type="html">{{ document.excerpt | escape }}</summary>
-		<category>{{ document.collection }}</category>
-		{%- assign tagrss = document.tags | join: ','  | split: ',' | sort -%}
+		<category term="{{ document.collection }}"/>
+		{% assign tagrss = document.tags | join: ','  | split: ',' | sort -%}
 		  {% for tag in tagrss  -%}
-		<category>{{ tag }}</category>
+		<category term="{{ tag }}"/>
 		  {%- endfor %}
 		{% if entryimg %}
 		<media:thumbnail url="{{ entryimg | absolute_url }}" xmlns:media="http://search.yahoo.com/mrss/" />
