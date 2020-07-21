@@ -4,48 +4,56 @@ layout: null
 {%- assign og_image = site.og_image | default: site.author.avatar | default: site.github.owner_gravatar_url | absolute_url -%}
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" >
-	<id>{{ page.url | absolute_url }}</id>
-	<title>{{ site.title | xml_escape }}{% if site.subtitle %}{{ " | " | append: site.subtitle | xml_escape }}{% endif %}</title>
-	<updated>{{ site.time | date_to_xmlschema }}</updated>
+	<generator uri="https://dieghernan.github.io/chulapa" version="1.0.0">Chulapa</generator>
 	<link href="{{ page.url | absolute_url }}" rel="self" type="application/atom+xml" />
 	<link href="{{  ""  | absolute_url }}" rel="alternate" type="text/html" />
+	<updated>{{ site.time | date_to_xmlschema }}</updated>
+	<id>{{ page.url | absolute_url }}</id>
+	<title>{{ site.title | strip_html  }}{% if site.subtitle %}{{ " | " | append: site.subtitle | strip_html }}{% endif %}</title>
+	{% if site.subtitle -%}
+	<subtitle>{{- site.subtitle | strip_html -}}</subtitle>
+	{%- endif %}
 	<author>
 		<name>{{ site.author.name | default: site.github.owner_name }}</name>
 		{% assign authorlink = site.author.links | where_exp: "item", "item.url contains 'http'" -%}
-		{%- for link in authorlink limit: 1 -%}
+		{% for link in authorlink limit: 1 -%}
 		<uri>{{ link.url }}</uri>
-		{%- endfor -%}			
+		{%- endfor %}			
 	</author>
-	<generator uri="https://dieghernan.github.io/chulapa" version="1.0.0">Chulapa</generator>
 	<rights>(c) {{ site.time | date: '%Y' }}, {{  site.author.name | default: site.github.owner_name }}</rights>
-	{% if site.subtitle %}
-	<subtitle>{{ site.subtitle }}</subtitle>
-	{% endif %}
-	{% if site.navbar.brand.img %}
-	<icon>{{ site.navbar.brand.img | absolute_url }}</icon>
-	{% endif %}
-	<logo>{{ og_image }}</logo>
+	{% if site.navbar.brand.img -%}
+	<icon>{{- site.navbar.brand.img | absolute_url -}}</icon>
+	{%- endif %}
+	<logo>{{- og_image -}}</logo>
 	{%- assign wpm = words_per_minute | default: 200 -%}
 	{%- assign  alldocs = 	site.documents | 
 							where_exp: "item", "item.date != nil" | 
 							sort: 'date' | reverse -%}
 	{%- for document in alldocs limit:1 -%}
-	{%- assign entryimg =  document.og_image | default: document.header_img -%}
+	{%- assign entryimg =  document.og_image | default: document.header_img | absolute_url -%}
 	<entry>
-		<id>{{ document.url | replace: "index.html", "" | absolute_url | uri_escape }}</id>
-		<title>{{ document.title | escape }}</title>
-		<updated>{{ document.last_modified_at | default: document.date | date_to_xmlschema }}</updated>
-		{%- if document.last_modified_at -%}
+		<title>{{ document.title | strip_html }}</title>
+		<link href="{{ document.url | replace: "index.html", "" | absolute_url | uri_escape }}" rel="alternate" type="text/html" title="{{ document.title | strip_html }}"/>
 		<published>{{ document.date | date_to_xmlschema }}</published>
-		{%- endif -%}
+		<updated>{{ document.last_modified_at | default: document.date | date_to_xmlschema }}</updated>
+		<id>{{ document.url | replace: "index.html", "" | absolute_url | uri_escape }}</id>
+		<content type="html" xml:base="{{ document.url | replace: "index.html", "" | absolute_url | uri_escape }}">
+			{% if entryimg %}
+			{{ '&lt;img src=&quot;' | append: entryimg | append: '&quot;'  }}
+			{% endif %}
+			{{ document.content | markdownify | escape }}
+		</content>
+		{% assign entryauthor = page.author | default: site.author %}
+		<author>
+			<name>{{ entryauthor.name | default: site.github.owner_name }}</name>
+			{%- for link in entryauthor.links limit: 1 -%}
+			<uri>{{ link.url }}</uri>
+			{%- endfor -%}		
+		</author>
 		<summary type="html">{{ document.excerpt | escape }}</summary>
-		<link href="{{ document.url | replace: "index.html", "" | absolute_url | uri_escape }}" rel="alternate" type="text/html" title="{{ document.title | xml_escape }}"/>
 		{% if entryimg %}
-    <media:thumbnail url="{{ entryimg | absolute_url }}" xmlns:media="http://search.yahoo.com/mrss/" />
-    {% endif  %}
-    <content type="html" xml:base="{{ document.url | replace: "index.html", "" | absolute_url | uri_escape }}">
-      {{ document.content | markdownify | escape }}
-    </content>
+		<media:thumbnail url="{{ entryimg | absolute_url }}" xmlns:media="http://search.yahoo.com/mrss/" />
+		{% endif  %}
 	</entry>
     {%- endfor -%}	
 </feed>
