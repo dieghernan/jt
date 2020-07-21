@@ -1,34 +1,8 @@
 {
-  "name": "lunr",
-  "description": "Simple full-text search in your browser.",
-  "version": "2.3.8",
-  "author": "Oliver Nightingale",
-  "keywords": ["search"],
-  "homepage": "https://lunrjs.com",
-  "bugs": "http://github.com/olivernn/lunr.js/issues",
-  "main": "lunr.js",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/olivernn/lunr.js.git"
-  },
-  "devDependencies": {
-    "benchmark": "2.1.x",
-    "chai": "3.5.x",
-    "eslint-plugin-spellcheck": "0.0.8",
-    "eslint": "7.5.x",
-    "jsdoc": "3.5.x",
-    "mocha": "3.3.x",
-    "mustache": "2.2.x",
-    "node-static": "0.7.x",
-    "uglify-js": "2.6.x",
-    "word-list": "1.0.x"
-  },
-  "scripts": {
-    "test": "make test"
+  "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.13.1",
+    "@fortawesome/free-regular-svg-icons": "^5.13.1",
+    "@fortawesome/free-solid-svg-icons": "^5.13.1",
+    "@olivernn/lunr.js": "^2.3.8"
   }
-},
-"repository": {
-    "type": "git",
-    "url": "https://github.com/allejo/jekyll-toc.git"
 }
