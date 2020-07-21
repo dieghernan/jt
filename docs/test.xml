@@ -29,7 +29,7 @@ layout: null
 	{%- assign  alldocs = 	site.documents | 
 							where_exp: "item", "item.date != nil" | 
 							sort: 'date' | reverse -%}
-	{%- for document in alldocs limit:1 -%}
+	{%- for document in alldocs  -%}
 	{%- assign entryimg =  document.og_image | default: document.header_img | absolute_url -%}
 	<entry>
 		<title>{{ document.title | strip_html }}</title>
@@ -38,8 +38,8 @@ layout: null
 		<updated>{{ document.last_modified_at | default: document.date | date_to_xmlschema }}</updated>
 		<id>{{ document.url | replace: "index.html", "" | absolute_url | uri_escape }}</id>
 		<content type="html" xml:base="{{ document.url | replace: "index.html", "" | absolute_url | uri_escape }}">
-			{% if entryimg %}
-			{{ '&lt;img src=&quot;' | append: entryimg | append: '&quot;'  }}
+  		{% if entryimg %}
+			{{ '&lt;img src=&quot;' | append: entryimg | append: '&quot; &gt;'  }}
 			{% endif %}
 			{{ document.content | markdownify | escape }}
 		</content>
