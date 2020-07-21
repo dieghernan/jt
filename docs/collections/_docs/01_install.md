@@ -49,12 +49,22 @@ Note that making copies of theme files will prevent you from receiving any theme
 
 Please read the rest of the docs for further adjustments.
 
-
-
 ## 2. Fork this repository
 
-You can fork [the current repo](https://github.com/dieghernan/chulapa/) and modify it. However, the site would be frozen at the moment of forking and it would make harder for you to get potential new features and upgrades.
+You can fork [the current repo](https://github.com/dieghernan/chulapa/generate) and modify it. However, the site would be frozen at the moment of forking and it would make harder for you to get potential new features and upgrades.
 
+The minimal files and folders you need are:
+ 
+- `chulapa/assets`
+- `chulapa/_layouts`
+- `chulapa/_includes`
+- `chulapa/_sass`
+- `Gemfile`
+- `_config.yml`
+
+You may need also to keep `.travis.yml` if you want to use Algolia as [your search engine](https://dieghernan.github.io/chulapa/docs/02-config#search-engines).
+
+You can safely remove any other content of the repo.
 
 <i class="fas fa-exclamation-triangle"></i> The current repo is deployed from the `docs` folder, please be aware of that when setting your `_config.yml`.
 {: .alert .alert-warning .p-3 .mx-2 mb-3}
