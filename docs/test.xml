@@ -29,20 +29,23 @@ layout: null
 	{%- assign  alldocs = 	site.documents | 
 							where_exp: "item", "item.date != nil" | 
 							sort: 'date' | reverse -%}
-	{%- for document in alldocs limit:5 -%}
+	{%- for document in alldocs limit:1 -%}
 	{%- assign entryimg =  document.og_image | default: document.header_img -%}
 	<entry>
 		<id>{{ document.url | replace: "index.html", "" | absolute_url | uri_escape }}</id>
-		<title>{{ document.title | escape_once }}</title>
+		<title>{{ document.title | escape }}</title>
 		<updated>{{ document.last_modified_at | default: document.date | date_to_xmlschema }}</updated>
 		{%- if document.last_modified_at -%}
 		<published>{{ document.date | date_to_xmlschema }}</published>
 		{%- endif -%}
-		<summary type="html">{{ document.excerpt }}</summary>
+		<summary type="html">{{ document.excerpt | escape }}</summary>
 		<link href="{{ document.url | replace: "index.html", "" | absolute_url | uri_escape }}" rel="alternate" type="text/html" title="{{ document.title | xml_escape }}"/>
 		{% if entryimg %}
     <media:thumbnail url="{{ entryimg | absolute_url }}" xmlns:media="http://search.yahoo.com/mrss/" />
     {% endif  %}
+    <content type="html" xml:base="{{ document.url | replace: "index.html", "" | absolute_url | uri_escape }}">
+      {{ document.content | markdownify | escape }}
+    </content>
 	</entry>
     {%- endfor -%}	
 </feed>
