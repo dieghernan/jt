@@ -6,7 +6,7 @@ layout: null
 <feed xmlns="http://www.w3.org/2005/Atom" >
 	<id>{{ page.url | absolute_url }}</id>
 	<title>{{ site.title | xml_escape }}{% if site.subtitle %}{{ " | " | append: site.subtitle | xml_escape }}{% endif %}</title>
-	<updated>{{ site.time | date: "%a, %d %b %Y %H:%M:%S%z" }}</updated>
+	<updated>{{ site.time | date_to_xmlschema }}</updated>
 	<link href="{{ page.url | absolute_url }}" rel="self" type="application/atom+xml" />
 	<link href="{{  ""  | absolute_url }}" rel="alternate" type="text/html" />
 	<author>
@@ -29,4 +29,16 @@ layout: null
 	{%- assign  alldocs = 	site.documents | 
 							where_exp: "item", "item.date != nil" | 
 							sort: 'date' | reverse -%}
+	{%- for document in alldocs limit:10 -%}
+	<entry>
+		<id>{{ page.url | replace: "index.html", "" | absolute_url | uri_escape }}</id>
+		<title>{{ page.title | xml_escape }}</title>
+		<updated>{{ page.last_modified_at | default: page.date | date_to_xmlschema }}</updated>
+		{%- if page.last_modified_at -%}
+		<published>{{ page.date | date_to_xmlschema }}</published>
+		{%- endif -%}
+		<summary type="html">{{ page.excerpt }}</summary>
+		<link href="{{ page.url | replace: "index.html", "" | absolute_url | uri_escape }}" rel="alternate" type="text/html" title="{{ page.title | xml_escape }}"/>
+	</entry>
+    {%- endfor -%}	
 </feed>
