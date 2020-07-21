@@ -1,8 +1,6 @@
 {
   "dependencies": {
-    "@fortawesome/free-brands-svg-icons": "^5.13.1",
-    "@fortawesome/free-regular-svg-icons": "^5.13.1",
-    "@fortawesome/free-solid-svg-icons": "^5.13.1",
+    "@fortawesome/fontawesome-free": "^5.0.0",
     "bootstrap": "4.5.0",
     "lunr": "2.3.8",
     "repository": {
