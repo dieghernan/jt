@@ -4,6 +4,7 @@
     "@fortawesome/free-regular-svg-icons": "^5.13.1",
     "@fortawesome/free-solid-svg-icons": "^5.13.1",
     "bootstrap": "4.5.0",
+    "lunr": "2.3.8",
     "repository": {
       "type": "git",
       "url": "https://github.com/allejo/jekyll-toc.git"
