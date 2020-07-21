@@ -26,7 +26,8 @@ layout: null
 	{%- endif %}
 	<logo>{{- og_image -}}</logo>
 	{%- assign wpm = words_per_minute | default: 200 -%}
-	{%- assign  alldocs = 	site.documents | 
+	{%- assign  alldocs = 	site.documents |
+	            where_exp: "item", "item.collection != 'skins'" |
 							where_exp: "item", "item.date != nil" | 
 							sort: 'date' | reverse -%}
 	{%- for document in alldocs  -%}
@@ -43,7 +44,7 @@ layout: null
 			{% endif %}
 			{{ document.content | markdownify | escape }}
 		</content>
-		{% assign entryauthor = page.author | default: site.author %}
+		{% assign entryauthor = document.author | default: site.author %}
 		<author>
 			<name>{{ entryauthor.name | default: site.github.owner_name }}</name>
 			{%- for link in entryauthor.links limit: 1 -%}
