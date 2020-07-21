@@ -1,12 +1,9 @@
 {
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/allejo/jekyll-toc.git"
-    },
     "dependencies": {
       "@fortawesome/fontawesome-free": "^5.0.0",
       "bootstrap": "4.5.0",
-      "lunr": "2.3.8"
+      "lunr": "2.3.8",
+      "algolia": "^4.3.0"
       }
 }
 
