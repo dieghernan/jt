@@ -1,12 +1,12 @@
 {
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.0.0",
-    "bootstrap": "4.5.0",
-    "lunr": "2.3.8",
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/allejo/jekyll-toc.git"
-    }
-  }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/allejo/jekyll-toc.git"
+    },
+    "dependencies": {
+      "@fortawesome/fontawesome-free": "^5.0.0",
+      "bootstrap": "4.5.0",
+      "lunr": "2.3.8"
+      }
 }
 
