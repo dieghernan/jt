@@ -107,7 +107,7 @@
 		</nav>
 	</div>
 	
-	<nav class="navbar sticky-top navbar-expand navbar-chulapa d-none d-md-block ">
+	<nav class="navbar {{ navexp }} sticky-top navbar-expand navbar-chulapa d-none d-md-block ">
 	<div class="container-fluid mx-md-2">
 			<a class="navbar-brand text-uppercase font-weight-light" href="{{ site.navbar.brand.url | default: "/" | absolute_url }}">
 			{%- if site.navbar.brand.img -%}
@@ -152,7 +152,7 @@
 	
 	
 {%- else -%}
-<nav class="navbar sticky-top navbar-chulapa">
+<nav class="navbar {{ navexp }} sticky-top navbar-chulapa">
 	<div class="container-fluid mx-md-2">
 			<a class="navbar-brand font-weight-bold" href="{{ site.navbar.brand.url | default: "/" | absolute_url }}">
 			{%- if site.navbar.brand.img -%}
