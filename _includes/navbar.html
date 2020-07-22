@@ -1,5 +1,4 @@
 {%- assign thispageurl = include.pageurl | replace: ".html", ""  -%}
-{% assign expand = include.expand %}
 {%- if site.navbar.style == "modern" -%}
 	<div class="navbar-chulapa-modern">
 		<input type="checkbox" class="navbar-chulapa-modern-button d-none" id="navi-toggle">
@@ -144,7 +143,7 @@
 	
 	
 {%- else -%}
-<nav class="navbar {% if expand %}navbar-expand-{{- expand -}}{% endif %} sticky-top navbar-chulapa">
+<nav class="navbar {% if site.navbar.expand %}navbar-expand-{{- site.navbar.expand -}}{% endif %} sticky-top navbar-chulapa">
 	<div class="container-fluid mx-md-2">
 			<a class="navbar-brand font-weight-bold" href="{{ site.navbar.brand.url | default: "/" | absolute_url }}">
 			{%- if site.navbar.brand.img -%}
