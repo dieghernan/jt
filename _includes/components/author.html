@@ -20,7 +20,7 @@
 				<div class="row mt-2">
 					<div class="col text-lg-center">
 					  {%- if location -%}
-						<address class="d-inline d-lg-block my-1 small chulapa-links-hover-only">
+						<address class="d-inline d-lg-block ml-1 mr-2 mx-lg-auto small chulapa-links-hover-only">
 						  <a class="pr-2 pr-lg-0" href="https://www.google.com/maps/search/?api=1&query={{- location | url_encode | replace: '%20', '+' -}}">
 						    <i class="fas fa-map-marker-alt fa-lg mr-1" aria-hidden="true"></i>{{ location }}</a>
 						</address>
@@ -29,9 +29,9 @@
 						<div class="d-inline my-1 mx-lg-0 chulapa-links-hover-only">
 							{%- for item in links -%}
 							{%- if item.url contains "@" -%}
-							<a class="mx-1" href="mailto:{{ item.url }}?subject={{ page.title | url_encode | replace: '%20', '+' }}"><i class="{{ item.icon }} fa-lg"></i></a>
+							<a class="mr-1 mx-lg-1" href="mailto:{{ item.url }}?subject={{ page.title | url_encode | replace: '%20', '+' }}"><i class="{{ item.icon }} fa-lg"></i></a>
 							{%- else -%}
-							<a class="mx-1" href="{{ item.url }}"><i class="{{ item.icon }} fa-lg"></i></a>
+							<a class="mr-1 mx-lg-1" href="{{ item.url }}"><i class="{{ item.icon }} fa-lg"></i></a>
 							{%- endif -%}
 							{%- endfor -%}
 						</div>
