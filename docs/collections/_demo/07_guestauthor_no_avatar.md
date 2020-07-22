@@ -26,7 +26,6 @@ author:
     - url: fakeemail@github.com
       icon: far fa-envelope
 ---
-
 This page shows how a contributor could be added to your blog, but without an avatar or location. **Octocat** is shy today.
 
 

@@ -30,7 +30,6 @@ author:
     - url: https://www.linkedin.com/company/github
       icon: "fab fa-linkedin"
 ---
-
 This page shows how a contributor could be added to your blog. In this case **Octocat** is telling us about its plans on the next months...
 
 
