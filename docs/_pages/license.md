@@ -1,8 +1,8 @@
 ---
 layout: default
-title: About <span class="chulapa">Chulapa</span>
+title: Legal stuff
 subtitle: License and Attributions
-permalink: ./about
+permalink: ./license
 show_toc: true
 ---
 

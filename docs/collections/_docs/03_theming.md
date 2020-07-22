@@ -97,6 +97,9 @@ chulapa-skin:
 
 `chulapa-skin vars` usually overrides any other value provided by `autothemer` or `theme`, meaning that you can modify any parameter of a skin via this method, i.e, changing the default font or primary color of a specific skin.
 
+**Heads up**: Enclosing your `vars` into `" "` or `' '` is recommended, specially in values with `#` (colors), booleans (`true,false`) or lists (`Lato, serif`). YAML, Liquid and SCSS are playing together on this process.
+{: .alert .alert-info .p-3 .mx-2 mb-3}
+
 
 On top of the default [Bootstrap variables](https://github.com/dieghernan/chulapa/blob/master/_sass/bootstrap/_variables.scss) (500+!) this theme has specific variables that makes the customization of specific components easier. See the `vars` dictionary [here]({{ "./docs/variable-dictionary" | absolute_url }}).
 
@@ -162,7 +165,7 @@ chulapa-skin:
     warning: "#ff9933"
     light: "#eef0f2"
     dark: "#000633"
-    headings-font-family:Voltaire
+    headings-font-family: Voltaire
 ```
 
 The skin is already implemented on your theme. Please remember to remove `$` and `;`, enclose hex colors in `" "` and leave a blank space after `:`.

@@ -91,7 +91,11 @@ navbar:
      - title: Search LUNR
        url: /demo/search_lunr
   - title: About
-    url: /about
+    child: 
+      - title: License
+        url: /license
+      - title: Showcase
+        url: /showcase
 footer:
   links:
     - label: "RSS"
