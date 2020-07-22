@@ -53,7 +53,7 @@ google_cse_id: 002514516175957445995:tvgnhtemtbu
 
 # B. Navigation
 navbar:
-  style :  dual 
+  style :  modern 
   brand:
     title :  Home
     img: "./assets/img/site/brand-clear.png"
@@ -90,6 +90,8 @@ navbar:
        url: /demo/search_google
      - title: Search LUNR
        url: /demo/search_lunr
+     - title: Classic Navbar
+       url: /demo/classic-navbar
   - title: About
     child: 
       - title: License
