@@ -128,7 +128,7 @@ Check this [live demo]({{ "/demo/classic-navbar" | absolute_url }}) of the class
 
 - `navbar`:
   - `style`:  `modern` value would display your navbar as a floating animated button. `dual` option also available.  **classic**.
-  - `expand`: Set the breakpoint based device screen size where the button would not appear. Values are `sm, md, lg, xl`. See [Bootstrap docs](https://getbootstrap.com/docs/4.5/layout/overview/) to understand each value. **md**.
+  - `expand`: Defines on which devices the links of the navbar would expand. Values are `sm, md, lg, xl` for small, medium, large and extra-large devices. See [Bootstrap docs](https://getbootstrap.com/docs/4.5/layout/overview/) on breakpoints to understand each value. **md**.
   - `brand`:
      - `title` :  Text to be displayed as the title of your navbar.
      - `img`: An icon (ideally 30px x 30 px) displayed together with the `title`.
