@@ -1,4 +1,13 @@
 {%- assign thispageurl = include.pageurl | replace: ".html", ""  -%}
+{%- assign colnav = site.navbar.expand | default: "md" -%}
+{%- if colnav == "always" -%}
+{%- assign navexp = "navbar-expand" -%}
+{%- elsif colnav == "never" -%}
+{%- else -%}
+{%- assign navexp = "navbar-expand-" | append: colnav -%}
+{%- endif -%}
+
+
 {%- if site.navbar.style == "modern" -%}
 	<div class="navbar-chulapa-modern">
 		<input type="checkbox" class="navbar-chulapa-modern-button d-none" id="navi-toggle">
