@@ -170,7 +170,7 @@ $value in $theme-colors {
     }
 
     p {
-        @include fluid-type(font-size, breakpoint-min("md"), breakpoint-min("lg"), $font-size-base, $font-size-lg);
+        @include fluid-type(font-size, breakpoint-min("md"), breakpoint-min("lg"), $font-size-base, 1.5*$font-size-base);
     }
     
     .chulapa-btn-project{
