@@ -1,4 +1,5 @@
 remote_theme: dieghernan/chulapa
+chulapaversion: "on development"
 title: Chulapa
 subtitle: A full flexible Jekyll theme  
 description: Template for creating free sites on Github Pages
