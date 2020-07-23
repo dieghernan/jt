@@ -98,6 +98,8 @@ navbar:
         url: /license
       - title: Showcase
         url: /showcase
+      - title: Contribute
+        url: /contribute
 footer:
   links:
     - label: "RSS"
