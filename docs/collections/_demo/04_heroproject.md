@@ -16,7 +16,10 @@ mathjax: true
 project_links:
     - url: https://www.mathjax.org/
       icon: fas fa-superscript
-      label: Go to MathJax.org      
+      label: Go to MathJax.org
+    - url: https://www.example.com
+      icon: fab fa-github
+      label: Example         
 ---
 
 This page shows the `hero` header with a project button. It also has enabled 
@@ -47,6 +50,9 @@ mathjax: true
 project_links:
     - url: https://www.mathjax.org/
       icon: fas fa-superscript
-      label: Go to MathJax.org 
+      label: Go to MathJax.org
+    - url: https://www.example.com
+      icon: fab fa-github
+      label: Example
 ---
 ```
