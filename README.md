@@ -1,5 +1,5 @@
-# jekyll-atocha-
-Yet another Jekyll theme 
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/dieghernan/chulapa)![GitHub](https://img.shields.io/github/license/dieghernan/chulapa)![GHpages](https://img.shields.io/badge/gh--pages-ready-succes)![Jekyll](https://img.shields.io/badge/jekyll-3.8.7-blue)![Bootstrap](https://img.shields.io/badge/bootstrap-4.5.0-blue)
+
 
 
 TODO
