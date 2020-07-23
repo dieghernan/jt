@@ -68,7 +68,7 @@
           <div role="navigation" class="d-flex flex-wrap justify-content-center">
             {%- for social in site.footer.links  -%}
             {%- if social.url contains "@" -%}
-            <a href="mailto:{{- social.url -}}?subject={{ 'About ' | append: site.title | replace: ' ', '%20' }}" title="footer{{ social.label }}" class="chulapa-footer-sociallink lead"> 
+            <a href="mailto:{{- social.url -}}?subject={{ 'About ' | append: site.title | strip_html | uri_escape }}" title="footer{{ social.label }}" class="chulapa-footer-sociallink lead"> 
             
             {%- else -%}
             <a href="{{ social.url | absolute_url }}" title="footer{{ social.label }}" class="chulapa-footer-sociallink lead">                          {%- endif -%}
