@@ -52,33 +52,25 @@ layout: default
 	  <h3>{% include_cached snippets/datetranslate.html  date=dateformat %}</h3>
 	{% endif %}
   	{%- for document in month.items -%}
-  	{%- assign excerpt = document.excerpt | markdownify | strip_html -%}
-  	{%- assign excerptfallback = document.content |
-									markdownify |  newline_to_br | 
-									replace:"<br />", ",.," | 
-									replace:"{{", ",.," | 
-									replace:"{%", ",.," | 
-									split: ",.," | first | strip_html -%}
 	<article class="ml-2 my-4">
-	  			  {% if document.date %}
-			  {% assign dateformat = document.date | date: "%A, %d" %}
-			  <p class="small mb-1"> <time datetime="{{- document.date | date_to_xmlschema -}}">{% include_cached snippets/datetranslate.html  date=dateformat %}</time>
-{% if document.last_modified_at %} <i class="fa fa-redo fa-sm" aria-hidden="true"></i>{% endif %}</p>
-			  {% endif %}
 		<div class="row g-0 mb-2">
 			<div class="col">
-			{%- if showcol -%}
-        <p class="my-1 badge  chulapa-pill-bg-light">{{ document.collection }}</p>
-        {%- endif -%}
-				<h4><a href="{{- document.url | absolute_url -}}" class="chulapa-text-body-color">{{ document.title }}</a></h4>
-				{%- if document.subtitle -%}<h5>{{- document.subtitle -}}</h5> {%- endif -%}
+				<h6><a href="{{- document.url | absolute_url -}}" class="chulapa-text-body-color">{{ document.title }}</a></h6>
 			</div>
 			{%- if document.header_img  or document.og_image  -%}
 			<a href="{{- document.url | absolute_url -}}" class="col-2 ml-2 btn chulapa-overlay-img chulapa-min-h-10" style="background-image: url('{{ document.og_image | default: document.header_img | absolute_url }}')"></a>
 			{%- endif -%}
 		</div>
-			<p>{{- excerpt | default: excerptfallback | truncatewords: 30 -}}</p>
-		
+		<p class="small mb-1">
+		{% if document.date %}
+			  {% assign dateformat = document.date | date: "%A, %d" %}
+			   <time datetime="{{- document.date | date_to_xmlschema -}}">{% include_cached snippets/datetranslate.html  date=dateformat %}</time>
+{% if document.last_modified_at %} <i class="fa fa-redo fa-sm" aria-hidden="true"></i>{% endif %}
+			  {% endif %}
+		  {%- if showcol -%}
+        <span class="mx-1 badge  chulapa-pill-bg-light">{{ document.collection }}</span>
+        {%- endif -%}
+		</p>
 	</article>
 	{% endfor %}
 <hr class="w-25 bg-light">
