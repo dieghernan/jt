@@ -4,6 +4,7 @@ title: Playground
 subtitle: Liquid 
 permalink: /liquid
 show_author : true
+include_on_search: false
 test: demo
 ---
 
