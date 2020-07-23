@@ -11,16 +11,20 @@
 
 ## Notable features
 
-## Theming
+-  Bootstrap 4 - Fully responsive
+-  Fontawesome 5
+-  3 different navbar styles
+-  Atom feed
+-  Internal search
+-  Comments
+-  Masonry gallery
+-  Video support
+-  Structured data for better SEO
+-  Google Analytics
+-  Twitter Cards and Open Graph data
+-  14+ preinstalled skins
+-  Powerful look-and-feel customization
+-  Archive, cloud tag and index special layouts
 
-## Installation
+Ideal for blogs, news, portfolios and personal sites. Want to know more? [Go to Docs](https://dieghernan.github.io/chulapa/docs/01-install)
 
-## Docs
-
-## Contributing
-
-## Credits
-
-## License
-
-### [MIT License](LICENSE)
