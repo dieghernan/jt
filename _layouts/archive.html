@@ -43,7 +43,7 @@ layout: default
 </div>
 
 {%- for year in postsInYear -%}
-<section id="{{ year.name | default: "NA" }}" class="pt-5">
+<section id="{{ year.name | default: "NA" }}" class="mt-2">
 	<h2 class="display-4 border-bottom border-chulapa">{{ year.name | default: "NA" }}</h2>
 	{%- assign postsInMonth = year.items | group_by_exp: 'post', 'post.date | date: "%B"' -%}
 	{%- for month in postsInMonth  -%}

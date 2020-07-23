@@ -286,6 +286,49 @@ compress   #http://jch.penibelst.de/
 
 ```
 
+### A note on Defaults
+
+Front Matter Defaults is a great way to avoid repeating yourself. You can inject fixed front matters to any file, collection or even static files all at once. A potential Front Matter Defaults configuration is proposed below:
+
+```yaml
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+      header_type         : "base"
+      include_on_search   : false
+      cloudtag_url        : "/tags"
+      cloudcategory_url   : "/categories"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      header_type       : "post"
+      include_on_search : true
+      include_on_feed   : true
+      show_date         : true
+      show_bottomnavs   : true
+      show_sociallinks  : true
+      show_comments     : true
+      show_tags         : true
+      show_categories   : true
+      show_author       : true
+      show_toc          : false
+  -
+    scope:
+      path: ""
+      type: "YOUR COLLECTION NAME"
+    values:
+      header_type       : "hero"
+      include_on_search : true
+      show_bottomnavs   : true
+      show_tags         : true
+```
+
+By doing this, you won't need to write those values on each file. Anyway, you can override defaults on specific pages by setting a different value on its front matter. 
 
 ## B. Snippets
 
