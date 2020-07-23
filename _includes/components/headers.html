@@ -58,7 +58,7 @@
             {% if include.projects %}
     <div class="btn-group btn-group-sm my-1 text-center" role="group">
       {% for project in include.projects  %}
-      <a href="{{ project.url | absolute_url }}" class="btn btn-primary" role="button" aria-disabled="true">{% if project.icon %}<i class="{{ project.icon }} fa-lg mr-2"></i>{% endif %}{{ project.label }}</a>
+      <a href="{{ project.url | absolute_url }}" class="btn btn-primary py-1" role="button" aria-disabled="true">{% if project.icon %}<i class="{{ project.icon }} fa-lg mr-2"></i>{% endif %}{{ project.label }}</a>
       {% endfor %}
     </div>
   {% endif %}
@@ -83,7 +83,7 @@
                         {% if include.projects %}
     <div class="btn-group btn-group-sm my-1 text-center" role="group">
       {% for project in include.projects  %}
-      <a href="{{ project.url | absolute_url }}" class="btn btn-primary" role="button" aria-disabled="true">{% if project.icon %}<i class="{{ project.icon }} fa-lg mr-2"></i>{% endif %}{{ project.label }}</a>
+      <a href="{{ project.url | absolute_url }}" class="btn btn-primary py-1" role="button" aria-disabled="true">{% if project.icon %}<i class="{{ project.icon }} fa-lg mr-2"></i>{% endif %}{{ project.label }}</a>
       {% endfor %}
     </div>
   {% endif %}
