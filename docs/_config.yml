@@ -1,5 +1,4 @@
 remote_theme: dieghernan/chulapa
-
 title: Chulapa
 subtitle: A full flexible Jekyll theme  
 description: Template for creating free sites on Github Pages
@@ -16,7 +15,6 @@ author:
       icon: fas fa-blog
     - url: https://stackoverflow.com/users/7877917/dieghernan
       icon: "fab fa-stack-overflow"
-
 gtag_id:  UA-139034853-2  
 search:
   provider: algolia
@@ -33,13 +31,13 @@ algolia:
     - html
     - md
   searchableAttributes:     #Optional                                                    
-      - title                                                                    
-      - headings                                                                 
-      - unordered(content)                                                       
-      - unordered(subtitle)                                                      
-      - unordered(categories)                                                    
-      - unordered(collection)                                                    
-      - unordered(tags) 
+    - title                                                                    
+    - headings                                                                 
+    - unordered(content)                                                       
+    - unordered(subtitle)                                                      
+    - unordered(categories)                                                    
+    - unordered(collection)                                                    
+    - unordered(tags) 
   customRanking:            #Optional
     - desc(include_on_search)
     - desc(title)
@@ -48,7 +46,6 @@ algolia:
 comments:
   provider: disqus
   disqus_shortname: chulapa
-
 google_cse_id: 002514516175957445995:tvgnhtemtbu
 
 # B. Navigation
@@ -104,7 +101,7 @@ footer:
   links:
     - label: "RSS"
       icon: "fa fa-rss"
-      url:  "./rss.xml"
+      url:  email@example.com # "./rss.xml"
     - label: "GitHub"
       icon: "fab fa-github"
       url: https://github.com/dieghernan/
@@ -122,8 +119,6 @@ chulapa-skin:
     link-color: '#a19d8e'
        
 # D. Jekyll Defaults and collections: see https://jekyllrb.com/
-
-# Collections https://jekyllrb.com/docs/step-by-step/09-collections/
 collections:
   demo:
     output: true
@@ -136,14 +131,9 @@ collections:
     permalink: /skins/:name
 collections_dir     : collections
 permalink           : /:year:month:day_:title/
-
-
-# Blog pagination: on this site /blog/index.html. https://jekyllrb.com/docs/pagination/
 paginate: 4
 paginate_path: "/blog/page:num/"
 paginator_maxnum: 3 
-
-# Defaults https://jekyllrb.com/docs/configuration/front-matter-defaults/
 defaults:
   -
     scope:
@@ -223,36 +213,26 @@ defaults:
       image_col         : gallery
 
 # XX. Other settings - no need to modify
-# HTML Compression
-# - https://jch.penibelst.de/
 compress_html:
   clippings: all
   blanklines: true
-
 plugins:
   - jekyll-github-metadata
   - jekyll-paginate
   - jekyll-include-cache
   - jekyll-sitemap
-
-# Exclude these files from production site
 exclude:
   - LICENSE
   - README.md
   - Gemfile
   - vendor
-
 include:
  - _pages
-
-# Conversion
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
-
-# Markdown Processing
 kramdown:
   input: GFM
   hard_wrap: false
@@ -264,7 +244,6 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-# Sass/SCSS
 sass:
   sass_dir: _sass
-  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  style: compressed

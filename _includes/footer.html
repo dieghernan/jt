@@ -67,7 +67,11 @@
           {%- if site.footer.links -%}
           <div role="navigation" class="d-flex flex-wrap justify-content-center">
             {%- for social in site.footer.links  -%}
-            <a href="{{ social.url | absolute_url }}" title="footer{{ social.label }}" class="chulapa-footer-sociallink lead">
+            {%- if social.url contains "@" -%}
+            <a href="mailto:{{- social.url -}}" title="footer{{ social.label }}" class="chulapa-footer-sociallink lead"> 
+            
+            {%- else -%}
+            <a href="{{ social.url | absolute_url }}?subject={{ site.title | url_encode | replace: '%20', '+' }}" title="footer{{ social.label }}" class="chulapa-footer-sociallink lead">                          {%- endif -%}
               <span class="fa-stack fa-lg" aria-hidden="true">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="{{ social.icon }} fa-stack-1x fa-inverse"></i>
