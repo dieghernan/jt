@@ -11,7 +11,7 @@
 
 ## Notable features
 
-## Skins
+## Theming
 
 ## Installation
 
