@@ -59,7 +59,7 @@ Coming back to the question, you can use this approach:
 
 ```
 A simple info alert **check it out!**
-{: .alert .alert-warning .p-3 .mx-2 mb-3}
+{: .alert .alert-info .p-3 .mx-2 mb-3}
 ```
 
 A simple info alert **check it out!**
