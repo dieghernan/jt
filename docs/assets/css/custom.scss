@@ -1,7 +1,8 @@
 ---
 ---
 @charset "utf-8";
-#badgehome {
-  font-size: 1rem;
-  text-shadow: none;
+#release {
+  font-size: 0.85rem;
+  color: {{ site.chulapa-skin.vars.primary }} ;
+  border-color: {{ site.chulapa-skin.vars.primary }};
 }
