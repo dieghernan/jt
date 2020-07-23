@@ -10,7 +10,7 @@ Additionally, there are some tips when using <span class="chulapa">Chulapa</span
 
 ## How do I...
 
-### ..know which version of the theme I am using?
+### ...know which version of the theme I am using?
 
 If you are on `remote_theme`mode, go to your `_config` file and have a look there. 
 
