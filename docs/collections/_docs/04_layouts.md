@@ -298,7 +298,7 @@ compress   #http://jch.penibelst.de/
 
 ### A note on Defaults
 
-[Front Matter Defaults]((https://jekyllrb.com/docs/configuration/front-matter-defaults/)) is a great way to avoid repeating yourself. You can inject fixed front matters to any file, collection or even static files all at once. A potential Front Matter Defaults configuration is proposed below:
+[Front Matter Defaults]((https://jekyllrb.com/docs/configuration/front-matter-defaults/) is a great way to avoid repeating yourself. You can inject fixed front matters to any file, collection or even static files all at once. A potential Front Matter Defaults configuration is proposed below:
 
 ```yaml
 defaults:

@@ -61,7 +61,7 @@ author:
       icon: fab fa-twitter
     - url: https://github.com/facebook
       icon: "fab fa-facebook"
-    - url: https://www.linkedin.com/company/github
+    - url: https://www.linkedin.com
       icon: "fab fa-linkedin"
 project_links:
     - url: https://www.mathjax.org/

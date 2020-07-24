@@ -4,11 +4,11 @@
 // Custom free font: see https://diario.madrid.es/chulapa/
 @font-face {
   font-family: chulapa;
-  src: url(https://dieghernan.github.io/assets/fonts/Chulapa/Chulapa-Bold_vmod.otf);
+  src: url({{ "/assets/fonts/Chulapa/Chulapa-Bold_vmod.otf" | absolute_url }});
   font-display: fallback;
 }
-@import "skins/hootstrap";
-@import "bootstrap/bootstrap";
+@import "skins/deeply";
+@import "bootstrap/hootstrap";
 @import "chulapa-master";
 @import "reset-algolia";
 @import "pygments/zenburn";
