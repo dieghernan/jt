@@ -106,7 +106,7 @@ author:
 
 - `include_on_feed`: Include on your feed this page.
 
-**Note that** the page would be included on the feed if this option is set to `true` **and** there is a `date` set. Posts on Jekyll needs a date already present in the name of the file, but pages and collections don't, so set a `date` value for those. Your feed ia available on `https://yoururl/rss.xml`.
+**Note that** the page would be included on the feed if this option is set to `true` **and** there is a `date` set. Posts on Jekyll needs a date already present in the name of the file, but pages and collections don't, so set a `date` value for those. You have two feeds available: Atom feed at `https://yoururl/atom.xml` (preferred) and RSS 2.0 at `https://yoururl/rss.xml`.
 {: .alert .alert-warning .p-3 .mx-2}
 
 - `show_comments`: Activates comments on the page.

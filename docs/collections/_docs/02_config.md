@@ -172,7 +172,7 @@ footer:
   links:
     - label: "RSS"
       icon: "fa fa-rss"
-      url:  "./rss.xml"
+      url:  "./atom.xml"
     - label: "Twitter"
       icon: "fab fa-twitter"
       url: https://twitter.com/
