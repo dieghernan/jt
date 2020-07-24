@@ -69,27 +69,11 @@ See full set of variables [here](https://raw.githubusercontent.com/dieghernan/ch
 
 The full [Bootstrap color map](https://getbootstrap.com/docs/4.5/getting-started/theming/#color) could be modified by using these variables:
 
-| `vars` |
-|:---|
-| `white` | 
-| `gray-100` | 
-| `gray-200` | 
-| `gray-300` | 
-| `gray-400` | 
-| `gray-500` | 
-| `gray-600` | 
-| `gray-700` | 
-| `gray-800` | 
-| `gray-900` | 
-| `black` | 
-| `blue` | 
-| `indigo` | 
-| `purple` | 
-| `pink` | 
-| `red` | 
-| `orange` | 
-| `yellow` | 
-| `green` | 
-| `teal` | 
+|:---|:---|:---|:---|
+| `white` |  `gray-100` |  `gray-200` | `gray-300` | 
+| `gray-400` |  `gray-500` |  `gray-600` |  `gray-700` | 
+| `gray-800` |  `gray-900` |  `black` |  `blue` | 
+| `indigo` | `purple` |  `pink` |  `red` | 
+| `orange` | `yellow` |  `green` |  `teal` | 
 | `cyan` | 
 
