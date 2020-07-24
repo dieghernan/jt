@@ -6,11 +6,6 @@ show_toc: true
 h_max: 3
 ---
 
-
-
-* A markdown unordered list which will be replaced with the ToC, excluding the "Contents header" from above
-{:toc}
-
 Additionally, there are some tips when using <span class="chulapa">Chulapa</span>, as well as code samples.
 
 ## How do I...
