@@ -170,7 +170,6 @@ defaults:
       show_categories   : true
       show_author       : true
       show_breadcrumb   : true
-      og_image          : /assets/img/site/banner-blog.png
       breadcrumb_list   :
         - label: Home
           url: /
@@ -209,7 +208,6 @@ defaults:
       include_on_search : true
       cloudcategory_url : "/demo/category"
       show_breadcrumb   : true
-      og_image          : /assets/img/site/banner-demos.png
       breadcrumb_list   :
         - label: Home
           url: /
