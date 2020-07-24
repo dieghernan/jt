@@ -182,7 +182,7 @@ defaults:
     values:
       header_type       : "splash"
       cloudtag_url      : "/demo/tags"
-      include_on_search : false
+      include_on_search : true
       show_date         : true
       show_sociallinks  : true
       show_comments     : true
@@ -205,6 +205,7 @@ defaults:
       layout            : "default"
       header_type       : "base"
       cloudtag_url      : "/demo/tags"
+      include_on_search : true
       cloudcategory_url : "/demo/category"
       show_breadcrumb   : true
       breadcrumb_list   :

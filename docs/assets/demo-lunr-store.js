@@ -4,7 +4,7 @@ layout: null
 /* Demo for docs. Don't use this script on production */
 {% assign maxwords = site.search.lunr_maxwords | default: "30"  %}
 var store = [
-  {%- assign indexlunr = site.pages | concat: site.documents |  where_exp:'doc','doc.include_on_search != false' -%}
+  {%- assign indexlunr = site: documents | sort: date | reverse | concat: site.pages |  where_exp:'doc','doc.include_on_search != false' -%}
   {%- for doc in indexlunr limit: 20 -%}
       {
         "title": {{ doc.title | jsonify }},
