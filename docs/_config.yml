@@ -118,6 +118,7 @@ chulapa-skin:
     primary:   '#efebdd'
     secondary: "#dfd7ba"
     link-color: '#a19d8e'
+    body-bg: pink
        
 # D. Jekyll Defaults and collections: see https://jekyllrb.com/
 collections:
