@@ -33,6 +33,8 @@ permalink: ./atom.xml
 							sort: 'date' | reverse -%}
 	{%- for document in alldocs  -%}
 	{%- assign entryimg =  document.og_image | default: document.header_img | absolute_url -%}
+	{%- assign words = document.content | strip_html | number_of_words -%}   	
+		{%- assign minutes = words | divided_by: wpm | ceil | at_least: 1 -%}
 	<entry>
 		<title>{{ document.title | strip_html }}</title>
 		<link href="{{ document.url | replace: "index.html", "" | absolute_url | uri_escape }}" rel="alternate" type="text/html" title="{{ document.title | strip_html }}"/>
@@ -43,6 +45,8 @@ permalink: ./atom.xml
   		{% if entryimg %}
 			{{ '&lt;img src=&quot;' | append: entryimg | append: '&quot; &gt;'  }}
 			{% endif %}
+	{{ "<p>" | append: minutes | 
+	         append: " min</p>" | escape }}
 			{{ document.content | markdownify | escape }}
 		</content>
 		{% assign entryauthor = document.author | default: site.author %}
