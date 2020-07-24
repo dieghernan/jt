@@ -68,3 +68,7 @@ Sample `_config` file [here](https://github.com/dieghernan/chulapa/blob/master/_
 ## Configuration and Layouts
 
 You have available an extensive documentation [here](https://dieghernan.github.io/chulapa/docs/01-install)
+
+## License
+
+[The MIT License](https://dieghernan.github.io/chulapa/license)
