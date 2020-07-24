@@ -57,8 +57,8 @@ author:
 
 <span class="chulapa">Chulapa</span> has its own installation of Fontawesome 5, so you don't need to set anything. However, if you want to use your own kit, jump to your Fontawesome account and grab the kitcode. Implement this kitcode after `fa5_kit_code:`.
 
-**<i class="fa fa-thumbs-down" aria-hidden="true"></i> This theme is also compatible with Fontawesome 4** via shims, but it is encouraged to move to Fontawesome 5, since support to v4 would be deprecated.
-{: .alert .alert-info .p-3 .mx-2 mb-3}
+**<i class="fa fa-thumbs-o-down" aria-hidden="true"></i> This theme is also compatible with Fontawesome 4** via shims, but it is encouraged to move to Fontawesome 5, since support to v4 would be deprecated. See a FontAwesome 4 icon here: <i class="fa fa-times" aria-hidden="true"></i>
+{: .alert .alert-danger .p-3 .mx-2 mb-3}
 
 ### Google Analytics
 
