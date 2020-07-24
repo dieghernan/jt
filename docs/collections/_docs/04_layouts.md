@@ -251,7 +251,7 @@ The only purpose of this layout is to create a search page. You may not use it o
 
 On the page front matter, set `permalink:` to the same value of `search: landing_page:` you set on your `_config` file, otherwise the link on the navbar would be broken.
 
-### Summary: Layout structure
+### Layout structure and components
 
 A technical note about the layout structure of <span class="chulapa">Chulapa</span>.
 
@@ -282,9 +282,19 @@ compress   #http://jch.penibelst.de/
          └──├ archive
             ├ cloudcategory
             ├ cloudtag
-            └ indexcategory
+            └ indexcategory <- components/indexcards
 
 ```
+
+`components` are designed as bricks that build up your page. The options described above would activate the components on your page, but they can also be used on a standalone basis. For example, to include a index of the two latest post you can simply add this line to your page:
+
+{% raw %}
+```
+{% include_cached components/indexcards.html cacheddocs=site.posts  cachedlimit=2 %}
+```
+{% endraw %}
+
+{% include_cached components/indexcards.html cacheddocs=site.posts  cachedlimit=2 %}
 
 ### A note on Defaults
 
