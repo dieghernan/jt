@@ -11,20 +11,20 @@
 
 ## Notable features
 
--  Bootstrap 4 - Fully responsive
--  Fontawesome 5
--  3 different navbar styles
--  Atom feed
--  Internal search
--  Comments
--  Masonry gallery
--  Video support
--  Structured data for better SEO
--  Google Analytics
--  Twitter Cards and Open Graph data
--  14+ preinstalled skins
--  Powerful look-and-feel customization
--  Archive, cloud tag and index special layouts
+-  **Bootstrap 4** - Fully responsive
+-  **Fontawesome** 4 (supported) and **5 recommended**
+-  **3 different navbar styles**
+-  **Atom and RSS 2.0** feed
+-  **Internal search** by Algolia, Lunr or Google Custom Search
+-  **Comments** by Disqus
+-  **Masonry gallery**
+-  **Video support** - self-hosted or from core providers: Youtube, Vimeo, DailyMotion...
+-  **Structured data** for better SEO
+-  **Google Analytics**
+-  **Twitter Cards** and **Open Graph** data valid for Facebook, LinkedIn and WhatsApp
+-  **14+ preinstalled skins**
+-  **Powerful look-and-feel customization**
+-  **Archive, cloud tag and index special layouts**
 
-Ideal for blogs, news, portfolios and personal sites. Want to know more? [Go to Docs](https://dieghernan.github.io/chulapa/docs/01-install)
+The right choice for blogs, news, portfolios and personal sites. Want to know more? [Go to Docs](https://dieghernan.github.io/chulapa/docs/01-install).
 
