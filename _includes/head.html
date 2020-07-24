@@ -233,9 +233,11 @@ where_exp: "item", "item.url contains 'http'"
     <script src="https://kit.fontawesome.com/{{ site.fa5_kit_code }}.js" crossorigin="anonymous"></script>
     {%- else -%}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+    {%- endif %}
+    {%- if site.fa_v4_support -%}
     <!-- Compatibility with FontAwesome 4 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/v4-shims.css">
-    {%- endif %}
+    {%- endif -%}
     <!-- Theme css (Bootstrap included) -->
     <link rel="stylesheet" href="{{- "assets/css/main.css " | absolute_url -}}" />
     <!-- Custom css -->

@@ -60,6 +60,8 @@ author:
 **<i class="fa fa-thumbs-o-down" aria-hidden="true"></i> This theme is also compatible with Fontawesome 4** via shims, but it is encouraged to move to Fontawesome 5, since support to v4 would be deprecated. See a FontAwesome 4 icon here: <i class="fa fa-times" aria-hidden="true"></i>
 {: .alert .alert-danger .p-3 .mx-2 mb-3}
 
+To enable v4 support, set `fa_v4_support: true`.
+
 ### Google Analytics
 
 - `gtag_id` and `analytics_id`: Use either your gtag (recommended) or your Google Analytics tracking code. [Learn more](https://developers.google.com/analytics/devguides/collection/gtagjs).
