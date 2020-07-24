@@ -12,7 +12,7 @@
 ## Notable features
 
 -  **Bootstrap 4** - Fully responsive
--  **Fontawesome** 4 (supported) and **5 recommended**
+-  **Fontawesome 5** - v4 is supported via shims but would be deprecated at some point
 -  **3 different navbar styles**
 -  **Atom and RSS 2.0** feed
 -  **Internal search** by Algolia, Lunr or Google Custom Search
