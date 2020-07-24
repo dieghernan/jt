@@ -43,10 +43,10 @@ permalink: ./atom.xml
 		<id>{{ document.url | replace: "index.html", "" | absolute_url | uri_escape }}</id>
 		<content type="html" xml:base="{{ document.url | replace: "index.html", "" | absolute_url | uri_escape }}">
   		{% if entryimg %}
-			{{ '&lt;img src=&quot;' | append: entryimg | append: '&quot; &gt;'  }}
+			{{ "<img src='" | append: entryimg | append: "' >" | escape }}
 			{% endif %}
 	{{ "<p>" | append: minutes | 
-	         append: " min</p>" | escape }}
+	         append: " min.</p>" | escape }}
 			{{ document.content | markdownify | escape }}
 		</content>
 		{% assign entryauthor = document.author | default: site.author %}

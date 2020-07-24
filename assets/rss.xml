@@ -39,7 +39,7 @@ permalink: ./rss.xml
 			<description>
 				<![CDATA[	
  				{% if document.subtitle %}<h3>{{ document.subtitle | escape }}</h3>{% endif %}
-    		<div>{{ minutes }}min.</div>
+    		<p>{{ minutes }} min.</p>
 				<div>{{ document.content
 				| markdownify }}</div>
 				]]>
