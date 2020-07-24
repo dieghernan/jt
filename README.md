@@ -31,7 +31,20 @@ The right choice for blogs, news, portfolios and personal sites. Want to know mo
 ## Installation
 ### A. Remote theme method
 
+By using `jekyll-remote-theme` your repo would have remote access to the content of these folders:
+
+- `chulapa/assets`
+- `chulapa/_layouts`
+- `chulapa/_includes`
+- `chulapa/_sass`
+
+This method allows you to get updates easily
+
+#### Fresh start
+
 Create a Github account, go to [chulapa-101 repo](https://github.com/dieghernan/chulapa-101), fork it and quickstart your site!
+
+#### Migrate
 
 You can migrate an existing page adding this line to your `_config.yml` and make sure to remove any previous theme or remote theme parameter:
   
@@ -43,12 +56,6 @@ remote_theme: dieghernan/chulapa@[releasetag]
     
 Replace `[releasetag]` with the desired release tag, or just use `dieghernan/chulapa` if you want to use the `master` branch version of the theme (on active development).
 
-By using `jekyll-remote-theme` your repo would have remote access to the content of these folders:
-
-- `chulapa/assets`
-- `chulapa/_layouts`
-- `chulapa/_includes`
-- `chulapa/_sass`
 
 ### B. Fork the base repository
 
