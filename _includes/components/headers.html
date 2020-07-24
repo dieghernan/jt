@@ -96,7 +96,7 @@
 {%- elsif include.headertype == "post" -%}
 <header class="header-chulapa">
       {%- if include.imghero -%}
-      <div class="container-fluid header-chulapa-img" style="background-image: url('{{ include.imghero | absolute_url }}')">
+      <div class="container-fluid header-chulapa-img w-100" style="background-image: url('{{ include.imghero | absolute_url }}')">
       </div>
       {%- endif -%}
       <div class="container-lg mt-2">
