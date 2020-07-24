@@ -13,3 +13,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 
 ### Fixed
+
+#### [dev]
+
+- [ ] Bump version on `head`
+- [ ] Bump version on docs
+- [ ] Bump version on `chulapa-101` remote theme

@@ -59,7 +59,7 @@ author:
 
 To enable v4 support, set `fa_v4_support: true`.
 
-**<i class="fa fa-thumbs-o-down" aria-hidden="true"></i> It is encouraged** to migrate to v5. Next Fontawesome version (v6) to be released at second half 2020
+**It is encouraged** to migrate to v5. Next Fontawesome version (v6) to be released at second half 2020
 {: .alert .alert-danger .p-3 .mx-2 mb-3}
 
 ### Google Analytics
