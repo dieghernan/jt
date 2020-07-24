@@ -67,6 +67,30 @@
 		</div>
 	</div>
 </header>
+{%- elsif include.headertype == "image" -%}
+<header class="text-center header-chulapa">
+      {%- if include.imghero -%}
+      <img src="{{ include.imghero | absolute_url }}" alt="banner {{ page.title }}" class="chulapa-h-25">
+      {%- endif -%}
+      <div class="container-lg pt-4">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+            <h1>{{- page.title | default: "Where's your title?" -}}</h1>
+            {%- if page.subtitle -%}
+            <p class="lead">{{- page.subtitle -}}</p>
+            {%- endif -%}
+            {% if include.projects %}
+    <div class="btn-group btn-group-sm my-1 text-center" role="group">
+      {% for project in include.projects  %}
+      <a href="{{ project.url | absolute_url }}" class="btn btn-primary py-1" role="button" aria-disabled="true">{% if project.icon %}<i class="{{ project.icon }} fa-lg mr-2"></i>{% endif %}{{ project.label }}</a>
+      {% endfor %}
+    </div>
+  {% endif %}
+            <hr class="mb-0">
+			</div>
+		</div>
+	</div>
+</header>
 {%- elsif include.headertype == "post" -%}
 <header class="header-chulapa">
       {%- if include.imghero -%}
