@@ -6,6 +6,9 @@ show_toc: true
 h_max: 3
 ---
 
+
+{:toc}
+
 Additionally, there are some tips when using <span class="chulapa">Chulapa</span>, as well as code samples.
 
 ## How do I...
