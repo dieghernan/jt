@@ -20,6 +20,8 @@
 -  **Masonry gallery**
 -  **Video support** - self-hosted or from core providers: Youtube, Vimeo, DailyMotion...
 -  **Structured data** for better SEO
+-  **Code highlight** - 20 Pigment styles
+-. **Mathjax** inside
 -  **Google Analytics**
 -  **Twitter Cards** and **Open Graph** data valid for Facebook, LinkedIn and WhatsApp
 -  **14+ preinstalled skins**
@@ -79,3 +81,32 @@ You have available an extensive documentation [here](https://dieghernan.github.i
 ## License
 
 [The MIT License](https://dieghernan.github.io/chulapa/license)
+
+## Attributions
+
+**Chulapa** is a font owned by the City Council of Madrid designed and produced by Joancarles Casasín y Pablo Gámez on a previous design of Silvia Fernández Palomar licensed under [Creative Commons CC BY, Versión 4.0](https://creativecommons.org/licenses/by/4.0/). This theme incorporates a modification of this work in order to provide support to the english language.
+
+Bootstrap v.4.5 is released under the [MIT license](https://github.com/twbs/bootstrap/blob/v4.5.0/LICENSE) and is copyright 2020 Twitter.
+
+Fontawesome 5.x is free, open source, and GPL friendly - [License](https://fontawesome.com/license/free) (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License).
+
+This theme incorporates some pieces of code from [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/), Copyright (c) 2013-2020 [Michael Rose](https://mademistakes.com/) and contributors distributed under the terms of the [MIT license](https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE).
+
+This theme incorporates [Pygments CSS Themes](http://jwarby.github.io/jekyll-pygments-themes/languages/javascript.html), developed by [jwarby](https://github.com/jwarby/) distributed under the terms of [The Unlicense](https://github.com/jwarby/jekyll-pygments-themes/blob/master/UNLICENSE.txt).
+
+This theme incorporates [Ferpal Sans](https://www.silviaferpal.com/portfolio-1/ferpalsans) developed by Silvia Ferpal and it's free for personal use.
+
+This theme incorporates [Jekyll Pure Liquid Table of Contents](https://github.com/allejo/jekyll-toc), Copyright © 2017 [Vladimir "allejo" Jimenez](https://github.com/allejo) distributed under the terms of the [MIT license](https://github.com/allejo/jekyll-toc/blob/master/LICENSE.MIT.md).
+
+This theme incorporates [Compress HTML in Jekyll](http://jch.penibelst.de/), Copyright (c) 2014 [Anatol Broder](https://github.com/penibelst) distributed under the terms of the [MIT license](https://github.com/penibelst/jekyll-compress-html/blob/master/LICENSE).
+
+This theme incorporates [Lunr](http://lunrjs.com),
+Copyright (c) 2013 Oliver Nightingale.
+Lunr is distributed under the terms of the [MIT License](https://github.com/olivernn/lunr.js/blob/master/LICENSE).
+
+This theme uses graphic resources from [Unplash](https://unsplash.com/@dieghernan/collections).
+
+This theme uses graphic resources from [Pexels](https://www.pexels.com/@dieghernan-3081919/collections/).
+
+This theme uses graphic resources from [Lorem Picsum](https://picsum.photos/).
+
