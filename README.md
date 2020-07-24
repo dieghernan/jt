@@ -23,7 +23,7 @@
 -  **Google Analytics**
 -  **Twitter Cards** and **Open Graph** data valid for Facebook, LinkedIn and WhatsApp
 -  **14+ preinstalled skins**
--  **Powerful look-and-feel customization**
+-  **Powerful look-and-feel customization** with a dedicated sandbox
 -  **Archive, cloud tag and index special layouts**
 
 The right choice for blogs, news, portfolios and personal sites. Want to know more? [Go to Docs](https://dieghernan.github.io/chulapa/docs/01-install).
