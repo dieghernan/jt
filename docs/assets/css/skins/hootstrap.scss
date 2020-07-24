@@ -7,8 +7,8 @@
   src: url({{ "/assets/fonts/Chulapa/Chulapa-Bold_vmod.otf" | absolute_url }});
   font-display: fallback;
 }
-@import "skins/deeply";
-@import "bootstrap/hootstrap";
+@import "skins/hootstrap";
+@import "bootstrap/bootstrap";
 @import "chulapa-master";
 @import "reset-algolia";
 @import "pygments/zenburn";
