@@ -53,7 +53,7 @@ Additional options you can set on the front matter or via defaults:
 - `excerpt`: Brief description of the content. If not provided <span class="chulapa">Chulapa</span> would create it as the first paragraph of the content. Note that in the case of documents under `posts` Jekyll allows [additional options](https://jekyllrb.com/docs/posts/#post-excerpts).
 - `mathjax`: Would activate $$MathJax$$ on the page. 
 - `og_image`: OpenGraph image displayed on the web and social networks when sharing the page. This image would not be displayed on the page.
-- `header_type`: Choose between four different headers: `base`, `post`, `hero`, `splash` or no header with any other option.
+- `header_type`: Choose between five different headers: `base`, `post`, `hero`,`image`, `splash` or no header otherwise.
 - `header_img`: Image to be displayed on the header. If `og_image` is not set, this would be also the image to be displayed when sharing the page.
 
 **Heads up!** Some social networks would not show the image on sharing if it doesn't meet some criteria (i.e. Whatsapp doesn't display images with a size greater than 300Kb). On that cases you may prefer to set a high resolution image on `header_img` and a miniature on `og_image`.

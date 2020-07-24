@@ -48,7 +48,7 @@
       <div class="container-fluid header-chulapa-img" style="background-image: url('{{ include.imghero | absolute_url }}')">
       </div>
       {%- endif -%}
-      <div class="container-lg pt-4">
+      <div class="container-lg mt-2">
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
             <h1>{{- page.title | default: "Where's your title?" -}}</h1>
@@ -70,9 +70,11 @@
 {%- elsif include.headertype == "image" -%}
 <header class="text-center header-chulapa">
       {%- if include.imghero -%}
-      <img src="{{ include.imghero | absolute_url }}" alt="banner {{ page.title }}" class="chulapa-h-25">
+      <div class="container-fluid">
+        <img src="{{ include.imghero | absolute_url }}" alt="banner {{ page.title }}" class="chulapa-header-image">
+      </div>
       {%- endif -%}
-      <div class="container-lg pt-4">
+      <div class="container-lg mt-2">
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
             <h1>{{- page.title | default: "Where's your title?" -}}</h1>
@@ -97,7 +99,7 @@
       <div class="container-fluid header-chulapa-img" style="background-image: url('{{ include.imghero | absolute_url }}')">
       </div>
       {%- endif -%}
-      <div class="container-lg pt-4">
+      <div class="container-lg mt-2">
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
             <h1>{{- page.title | default: "Where's your title?" -}}</h1>
