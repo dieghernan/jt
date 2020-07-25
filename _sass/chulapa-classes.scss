@@ -583,8 +583,8 @@ $value in $theme-colors {
     .navbar-toggler {
         background-color: $navbar-chulapa-bg-color;
         border-color: $navbar-chulapa-toggler-border-color;
-        height: 4*$spacer;
-        width: 4*$spacer;
+        height: 56px;
+        width: 56px;
         position: fixed;
         @include border-radius(50%);
         font-size:1.25rem;
@@ -593,8 +593,8 @@ $value in $theme-colors {
     }
 
     &-background {
-        height: 4*$spacer;
-        width: 4*$spacer;
+        height: 56px;
+        width: 56px;
         @include border-radius(50%);
         position: fixed;
         background-image: radial-gradient($navbar-chulapa-bg-color, $navbar-chulapa-bg-color);
