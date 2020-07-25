@@ -1,5 +1,6 @@
 <div class="row my-1">
-  <nav aria-label="breadcrumb" class="col-lg-8 offset-lg-2 col small">
+<div class="col-lg-4 offset-lg-2 col small">
+  <nav aria-label="breadcrumb">
    <ol class="breadcrumb my-0 py-0 chulapa-bg-transparent pl-0" itemscope itemtype="https://schema.org/BreadcrumbList">
      {% if page.breadcrumb_list %}
        {% for item in page.breadcrumb_list %}
@@ -27,4 +28,13 @@
       {% endif %}
   </ol>
   </nav>
+</div>
+          {%- if page.show_sociallinks -%}
+          <div class="col-lg-4 col text-right lead">
+            <a  href="https://twitter.com/intent/tweet?url={{ canonical_url }}&text={{ sharetitle | url_encode }}{%- if site.twitter.site -%}&via={{- site.twitter.site -}}{%- endif -%}" title="Share on Twitter"><i class="fab fa-twitter-square fa-lg" aria-hidden="true"></i></a>
+             <a  href="https://www.facebook.com/sharer.php?u={{ canonical_url }}" title="Share on Facebook"><i class="fab fa-facebook-square fa-lg" aria-hidden="true"></i></a>
+             <a  href="https://api.whatsapp.com/send?&text={{ sharetitle | url_encode }}%20{{ canonical_url }}" title="Share on Whatsapp"><i class="fab fa-whatsapp-square fa-lg" aria-hidden="true"></i></a>
+            <a  href="https://www.linkedin.com/shareArticle?url={{ canonical_url }}&title={{ sharetitle | url_encode }}" title="Share on LinkedIn"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
+          </div>
+          {%- endif -%}
 </div>
