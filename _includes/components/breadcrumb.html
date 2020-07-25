@@ -1,5 +1,6 @@
 <div class="row my-1">
-<div class="col-lg-4 offset-lg-2 col-8 small">
+<div class="col-lg-4 offset-lg-2 col-7 small">
+  {% if page.show_breadcrumb %}
   <nav aria-label="breadcrumb">
    <ol class="breadcrumb my-0 py-0 chulapa-bg-transparent pl-0" itemscope itemtype="https://schema.org/BreadcrumbList">
      {% if page.breadcrumb_list %}
@@ -28,6 +29,7 @@
       {% endif %}
   </ol>
   </nav>
+  {% endif %}
               {%- if page.date and page.show_date -%}
          <div class="chulapaDateSocial">
             {% if page.last_modified_at %}
