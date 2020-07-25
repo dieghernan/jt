@@ -128,13 +128,13 @@ You can add a comment feature to a page. Currently only [Disqus](https://disqus.
 ## B. Navigation
 
 ### Navbar
-Configure the navbar and footer of your site. This theme supports a two-level navigation structure, and features **three different navbar styles**: `modern`, as a floating button with animation, a **classic sticky-top navbar** or `dual` that would display as `modern` on small devices and as a classic navbar on bigger devices. 
+Configure the navbar and footer of your site. This theme supports a two-level navigation structure, and features **three different navbar styles**: `fab`, as a floating action button with animation, a **classic sticky-top navbar** or `dual` that would display as `fab` on small devices and as a classic navbar on bigger devices. 
 
 Check this [live demo]({{ "/demo/classic-navbar" | absolute_url }}) of the classic navbar style.
 
 - `navbar`:
-  - `style`:  `modern` value would display your navbar as a floating animated button. `dual` option also available.  **classic**.
-  - `expand`: Defines on which devices the links of the navbar would expand. Values are `sm, md, lg, xl` for small, medium, large and extra-large devices, `always` or `never`. See [Bootstrap docs](https://getbootstrap.com/docs/4.5/layout/overview/) on breakpoints to understand each value. **md**.
+  - `style`:  `fab` value would display your navbar as a [floating action button](https://material.io/components/buttons-floating-action-button). `dual` option also available.  **classic**.
+  - `expand`: Only affects the classical navbar. Defines on which devices the links of the navbar would expand. Values are `sm, md, lg, xl` for small, medium, large and extra-large devices, `always` or `never`. See [Bootstrap docs](https://getbootstrap.com/docs/4.5/layout/overview/) on breakpoints to understand each value. **md**.
   - `brand`:
      - `title` :  Text to be displayed as the title of your navbar.
      - `img`: An icon (ideally 30px x 30 px) displayed together with the `title`.

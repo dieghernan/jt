@@ -51,7 +51,7 @@ google_cse_id: 002514516175957445995:tvgnhtemtbu
 
 # B. Navigation
 navbar:
-  style :  modern 
+  style :  fab
   brand:
     title :  Home
     img: "./assets/img/site/brand-clear.png"
