@@ -12,6 +12,7 @@ show_tags         : true
 show_categories   : true
 show_bottomnavs   : true
 show_comments     : true
+show_breadcrumb   : false
 mathjax: true
 project_links:
     - url: https://www.mathjax.org/
