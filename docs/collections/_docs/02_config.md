@@ -143,7 +143,7 @@ Check this [live demo]({{ "/demo/classic-navbar" | absolute_url }}) of the class
   
 ```yaml
 navbar:
-  style :  modern 
+  style :  fab 
   brand:
     title :  Home
     img: "./assets/img/site/brand-clear.png"
