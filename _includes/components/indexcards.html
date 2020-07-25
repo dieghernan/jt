@@ -21,7 +21,7 @@
               escape_once -}}
 				</div>
 			</div>
-			{% if post.date or post.tags or post.categories %}
+			{% if post.date or post.tags.size > 0 or post.categories.size > 0 %}
 			<div class="card-footer border-primary chulapa-bg-transparent ">
 				{% if post.date -%}<p class="small text-right font-italic mb-0">
 {% if post.last_modified_at %}
