@@ -170,8 +170,6 @@ defaults:
       show_author       : true
       show_breadcrumb   : true
       breadcrumb_list   :
-        - label: Home
-          url: /
         - label: Blog
           url: /blog/
   -
@@ -192,8 +190,6 @@ defaults:
       show_toc          : true
       show_breadcrumb   : true
       breadcrumb_list   :
-        - label: Home
-          url: /
         - label: Skins
           url: /skins
   -
@@ -208,8 +204,6 @@ defaults:
       cloudcategory_url : "/demo/category"
       show_breadcrumb   : true
       breadcrumb_list   :
-        - label: Home
-          url: /
         - label: Demo
           url: /demo
   -

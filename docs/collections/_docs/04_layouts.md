@@ -267,8 +267,7 @@ compress   #http://jch.penibelst.de/
           |         └ custom_bottomscripts
           |
           └── default    <──├ components/headers
-            /landingpage    ├ components/datesocial
-                            ├ components/breadcrumb
+            /landingpage    ├ components/breadcrumdatesocial
                             ├ components/author
                             ├ components/toc
          ├────────────>     ├ PAGE CONTENT

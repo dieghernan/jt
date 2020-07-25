@@ -5,11 +5,8 @@ layout: minimal
 	{% include components/headers.html headertype= page.header_type imghero=page.header_img projects=page.project_links %}
 </div>
 	<main class="container-fluid pb-3 flex-fill chulapa-landingpage-color chulapa-bg-hero">
-		{%- if page.show_date or page.show_sociallinks -%}
-		  {%- include components/datesocial.html -%}
-		{%- endif -%}
-	  {% if page.show_breadcrumb %}
-	  {%- include components/breadcrumb.html -%}
+	  {% if page.show_breadcrumb or page.show_date or page.show_sociallinks -%}
+	  {%- include components/breadcrumbdatesocial.html -%}
 	  {% endif %}
 		<div class="row pt-2">
 			<aside class="col-lg-2 mt-lg-3 small">
