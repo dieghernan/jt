@@ -18,7 +18,7 @@ permalink: ./atom.xml
 		<name>{{ site.author.name | default: site.github.owner_name }}</name>
 		{% assign authorlink = site.author.links | where_exp: "item", "item.url contains 'http'" -%}
 		{% for link in authorlink limit: 1 -%}
-		<uri>{{ link.url }}</uri>
+		<uri>{{ link.url | absolute_url }}</uri>
 		{%- endfor %}			
 	</author>
 	<rights>(c) {{ site.time | date: '%Y' }}, {{  site.author.name | default: site.github.owner_name }}</rights>
@@ -53,7 +53,7 @@ permalink: ./atom.xml
 		<author>
 			<name>{{ entryauthor.name | default: site.github.owner_name }}</name>
 			{%- for link in entryauthor.links limit: 1 -%}
-			<uri>{{ link.url }}</uri>
+			<uri>{{ link.url | absolute_url }}</uri>
 			{%- endfor -%}		
 		</author>
 		<summary type="html">{{ document.excerpt | escape }}</summary>
