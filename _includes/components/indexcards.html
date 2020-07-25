@@ -8,7 +8,7 @@
 		</a>
 		<div class="col-sm">
 			<div class="card-body chulapa-links-hover-only">
-				<a href="{{- post.url | absolute_url -}}"><h5 class="card-title">{{- post.title  | default: "—- —-" -}}</h5></a>
+				<a href="{{- post.url | absolute_url -}}"><h5 class="card-title">{{- post.title  | default: "---" -}}</h5></a>
 				{% if post.subtitle -%}<h6 class="card-subtitle mb-2 text-muted">{{- post.subtitle -}}</h6>{%- endif %}
 				
 {%- assign fallbackdesc = post.content | 
@@ -21,6 +21,7 @@
               escape_once -}}
 				</div>
 			</div>
+			{% if post.date or post.tags or post.categories %}
 			<div class="card-footer border-primary chulapa-bg-transparent ">
 				{% if post.date -%}<p class="small text-right font-italic mb-0">
 {% if post.last_modified_at %}
@@ -39,6 +40,7 @@
 				</a>
 				{%- endfor -%}
 				</div>
+			{% endif %}
 		</div>
 	</div>
 </div>
