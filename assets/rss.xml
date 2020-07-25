@@ -21,7 +21,7 @@ permalink: ./rss.xml
 			<title>{{ site.title | append: " | " | append: site.subtitle | xml_escape }}</title>
 			<url>{{- og_image -}}</url>
 			<link>{{ ""  | absolute_url -}}</link>
-			<description>{{ site.description | xml_escape }}</description>
+			<description>{{ site.description |  default: site.github.project_tagline | xml_escape }}</description>
 		</image>
 		{%- assign wpm = words_per_minute | default: 200 -%}
 		{%- assign  alldocs = site.documents | 

@@ -7,6 +7,7 @@ locale                  :     #default["en-US"] format language-TERRITORY , e.g 
 title                   :     #default["repository_name"]
 title_separator         :     #default [" | "]
 subtitle                :     #default [your-repository-tagline]  
+description             :     #default [your-repository-tagline]
 url                     :     #See baseurl - On Github Pages you may leave it blank - If you use CNAME use your domain
 baseurl                 :     #On Github Pages you may leave it blank. Have a look to: https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/
 words_per_minute        :     #default[200]
