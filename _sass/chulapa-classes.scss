@@ -574,7 +574,7 @@ $value in $theme-colors {
 }
 
 //Navbar modern
-.navbar-chulapa-modern {
+.navbar-chulapa-fab {
     label {
         line-height: unset;
     }
@@ -693,7 +693,7 @@ $value in $theme-colors {
             right: map-get($spacers, 4);
         }
 
-        .navbar-chulapa-modern-background {
+        .navbar-chulapa-fab-background {
             bottom: 1.05*map-get($spacers, 5);
             right: map-get($spacers, 4);
         }
@@ -709,7 +709,7 @@ $value in $theme-colors {
             right: 2*map-get($spacers, 5);
         }
 
-        .navbar-chulapa-modern-background {
+        .navbar-chulapa-fab-background {
             top: map-get($spacers, 4);
             right: 2*map-get($spacers, 5);
         }
