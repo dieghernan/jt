@@ -27,8 +27,10 @@
 -  **14+ preinstalled skins**
 -  **Powerful look-and-feel customization** with a dedicated sandbox
 -  **Archive, cloud tag and index special layouts**
+-  **Do you like breadcrumbs?** We have it.
+-  **Multiple authors** with location, picture and social links. Travel blogs and colaborative sites welcome!
 
-The right choice for blogs, news, portfolios and personal sites. Want to know more? [Go to Docs](https://dieghernan.github.io/chulapa/docs/01-install).
+A great alternative for blogs, news, portfolios and personal sites. Want to know more? [Go to Docs](https://dieghernan.github.io/chulapa/docs/01-install).
 
 ## Installation
 ### A. Remote theme method
