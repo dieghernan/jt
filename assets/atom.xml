@@ -62,6 +62,10 @@ permalink: ./atom.xml
 		  {% for tag in tagrss  -%}
 		<category term="{{ tag }}"/>
 		  {%- endfor %}
+		  		{% if entryimg %}
+		<media:thumbnail url=“{{ entryimg | absolute_url }}” xmlns:media=“http://search.yahoo.com/mrss/“ />
+		{% endif  %}
+
 	</entry>
     {%- endfor -%}	
 </feed>

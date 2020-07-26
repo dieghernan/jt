@@ -52,9 +52,11 @@ permalink: ./rss.xml
 			<category>{{ tag }}</category>
 			    {%- endfor %}
 		  	{%- endif %}
+		  	{%- if ogimage -%}
   		<media:title type="html"><![CDATA[{{ document.title }} ]]></media:title>
       <media:content url="{{- ogimage -}}" medium="image"/>
       <media:thumbnail url="{{- ogimage -}}" />
+      {%- endif -%}
       <guid isPermaLink="true">{{ document.url | absolute_url }}</guid>
       <pubDate>{{ document.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
 		</item>
