@@ -56,8 +56,7 @@ algolia:
   files_to_exclude:         #Optional
     - _layouts/*.html
     - _includes/*.html
-    - _pages/liquid*
-    - docs/blog/index.html
+    - docs/_pages/*
   extensions_to_index:      #Optional
     - html
     - md
