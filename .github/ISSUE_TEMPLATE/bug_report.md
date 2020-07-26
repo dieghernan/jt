@@ -16,6 +16,9 @@ Steps to reproduce the behavior:
 3. Scroll down to '....'
 4. See error
 
+**Relevant links**
+Links to the repo/live site or source code in order to check the full configuration of the site. 
+
 **Expected behavior**
 A clear and concise description of what you expected to happen.
 
