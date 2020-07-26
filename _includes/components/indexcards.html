@@ -1,13 +1,13 @@
 {%- assign alldocs = include.cacheddocs -%}
    {% for post in alldocs limit: include.cachedlimit %} 
-<article class="col-12 mb-4">
+<div class="col-12 mb-2">
 <div class="card mb-3 border-primary ">
 	<div class="row g-0">
 		<a href="{{- post.url | absolute_url -}}" class="col-sm-1 chulapa-min-h-10 chulapa-card-img chulapa-overlay-img chulapa-gradient {% if post.header_img == nil or post.og_image -%} d-none d-sm-flex {% endif %} "
 {% if post.header_img or post.og_image  -%} style="background-image: url('{{- post.og_image | default: post.header_img | absolute_url -}}')"{%-endif-%}>
 		</a>
 		<div class="col-sm">
-			<div class="card-body chulapa-links-hover-only">
+			<article class="card-body chulapa-links-hover-only">
 				<a href="{{- post.url | absolute_url -}}"><h5 class="card-title">{{- post.title  | default: "---" -}}</h5></a>
 				{% if post.subtitle -%}<h6 class="card-subtitle mb-2 text-muted">{{- post.subtitle -}}</h6>{%- endif %}
 				
@@ -20,7 +20,7 @@
 				<div class="card-text">{{- post.excerpt | default: fallbackdesc | strip_html | 
               escape_once -}}
 				</div>
-			</div>
+			</article>
 			{% if post.date or post.tags.size > 0 or post.categories.size > 0 %}
 			<div class="card-footer border-primary chulapa-bg-transparent ">
 				{% if post.date -%}<p class="small text-right font-italic mb-0">
@@ -44,5 +44,5 @@
 		</div>
 	</div>
 </div>
-</article>
+</div>
 {% endfor %}
