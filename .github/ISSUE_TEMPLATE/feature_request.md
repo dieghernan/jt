@@ -17,3 +17,6 @@ A clear and concise description of any alternative solutions or features you've 
 
 **Additional context**
 Add any other context or screenshots about the feature request here.
+
+**Please note** that only features that may be in the benefit of a broad number of users would be considered. 
+Chulapa allows you to extend the theme via your own css and js.
