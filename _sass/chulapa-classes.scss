@@ -373,7 +373,7 @@ $value in $theme-colors {
 }
 
 .chulapa-header-image {
-    @include fluid-type(height, breakpoint-min("md"), breakpoint-min("lg"), 30vmin, 25vmin);
+    @include fluid-type(height, breakpoint-min("md"), breakpoint-min("lg"), 30vh, 25vh);
 }
 //Not used
 .chulapa-size-base {
