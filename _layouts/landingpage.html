@@ -33,13 +33,19 @@ layout: minimal
 	  </div>
 	{%- endif -%}
 	{%- if page.show_categories -%}
+	{% assign size = page.categories | size %}
+	{% if size > 0 %}
 	<div class="chulapa-landingpage-badges">
   	{%- include components/categories.html-%}
   </div>
+  {% endif %}
 	{%- endif -%}
 	{%- if page.show_tags -%}
+	{% assign size = page.tags | size %}
+	{% if size > 0 %}
 	<div class="chulapa-landingpage-badges chulapa-landingpage-tag">
 	  {%- include components/tags.html-%}
 	</div>
+	{% endif %}
 	{%- endif -%}
 	</div>
