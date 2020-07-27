@@ -528,12 +528,19 @@ $value in $theme-colors {
   background-color: $hero-chulapa-bg-color;
   header {
     color: $hero-chulapa-text-color;
+    a {
+      color: $hero-chulapa-text-color;
+    }
   }
 }
 
 .chulapa-landingpage-color {
     color: $hero-chulapa-text-color;
     .breadcrumb {
+    &::before {
+      color: $hero-chulapa-text-color;
+    }
+    
        .active {
        color: $hero-chulapa-text-color;
        }
