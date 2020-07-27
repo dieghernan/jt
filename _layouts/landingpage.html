@@ -4,7 +4,8 @@ layout: minimal
 <div class="chulapa-bg-hero">
 	{% include components/headers.html headertype= page.header_type imghero=page.header_img projects=page.project_links %}
 </div>
-	<main class="container-fluid pb-3 flex-fill chulapa-landingpage-color chulapa-bg-hero">
+<div class="chulapa-bg-hero flex-fill">
+	<main class="container-fluid pb-3 chulapa-landingpage-color chulapa-bg-hero">
 	  {% if page.show_breadcrumb or page.show_date or page.show_sociallinks -%}
 	  {%- include components/breadcrumbdatesocial.html -%}
 	  {% endif %}
@@ -24,6 +25,7 @@ layout: minimal
 			</article>
 		</div>
 	</main>
+</div>
 	<div class="chulapa-bg-hero">
 	{%- if page.show_bottomnavs -%}
 	<div class="chulapa-landingpage-color">
