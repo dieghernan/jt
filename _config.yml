@@ -133,6 +133,7 @@ paginate: 4
 paginate_path: "/blog/page:num/"
 paginator_maxnum: 3  #default[3] Custom: max of number to be displayed on the paginator
 
+
 # Collections https://jekyllrb.com/docs/step-by-step/09-collections/
 collections:
   demo:
