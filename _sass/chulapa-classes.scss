@@ -373,6 +373,7 @@ $value in $theme-colors {
 }
 
 .chulapa-header-image {
+    object-fit: contain;
     @include fluid-type(height, breakpoint-min("md"), breakpoint-min("lg"), 30vh, 25vh);
 }
 //Not used
