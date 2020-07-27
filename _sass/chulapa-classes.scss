@@ -537,13 +537,16 @@ $value in $theme-colors {
 .chulapa-landingpage-color {
     color: $hero-chulapa-text-color;
     .breadcrumb {
-    &::before {
-      color: $hero-chulapa-text-color;
-    }
-    
-       .active {
-       color: $hero-chulapa-text-color;
-       }
+      .breadcrumb-item {
+      + .breadcrumb-item {
+         &::before {
+            color: $hero-chulapa-text-color;
+            }
+          }
+          .active {
+          color: $hero-chulapa-text-color;
+          }
+      }
     }
 
     a {
