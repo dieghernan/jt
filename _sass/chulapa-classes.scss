@@ -536,7 +536,7 @@ $value in $theme-colors {
 
 .chulapa-landingpage-color {
     color: $hero-chulapa-text-color;
-    
+    .breadcrumb {
     .breadcrumb-item {
     + .breadcrumb-item {
       &::before {
@@ -547,7 +547,8 @@ $value in $theme-colors {
       color: $hero-chulapa-text-color;
       }
     }
-
+    }
+    
     a {
         color: mix($info, $hero-chulapa-text-color, 50%);
     }
